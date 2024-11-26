@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gestion de Citas, Sistema Escolar, Java, Organizacion Academica">
+    <meta name="description" content="Pagina web explicativa del programa de gestion de citas desarrollado en Java.">
+    <title>CitasPoli</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #31CDDE;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1{
+          color:white;
+        }
+        nav {
+            margin: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #3FD2DE;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #005bb5;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 20px;
+            align-content:center;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #31CDDE;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+        
+        /* Bit�cora Button */
+.btn {
+    display: inline-block;
+    background: #3FD2DE;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #29FFE7;
+}
+
+        
+        /* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #3FD2DE;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #1abc9c;
+}
+        
+        footer {
+            text-align: left;
+            padding: 10px 20px;
+            background-color: #1B3C45;
+            color: #fff;
+            margin-top: 20px;
+        }
+        
+        /* Back-to-top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#back-to-top:hover {
+    background: #1abc9c;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CitasPoli</h1>
+    <p>Un proyecto diseñado para mejorar y optimizar el servicio en Control Escolar.</p>
+</header>
+
+<nav>
+    <a href="#objetivo">Objetivo</a>
+    <a href="#funcionalidades">Funcionalidades</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#contacto">Bitacora</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+    <section id="objetivo">
+        <h2>Cual es el objetivo de CitasPoli?</h2>
+        <p>Desarrollar un sistema de gestion de citas eficiente y confiable para mejorar la organizacion y la atencion en el control escolar de la Escuela Politecnica de Guadalajara, permitir a los usuarios programar citas de manera rapida y sencilla, Facilitar la gestion de citas por parte del personal administrativo y Proporcionar notificaciones automaticas para recordar a los usuarios sobre las citas programadas.</p>
+    </section>
+
+    <section id="funcionalidades">
+        <h2>Funcionalidades Principales</h2>
+        <ul>
+            <li>Gestión y programación de citas.</li>
+            <li>Interfaz para visualizar citas registradas.</li>
+            <li>Consulta y cancelacion de citas.</li>
+            <li>Foro para usuarios que tengan dudas.</li>
+        </ul>
+    </section>
+
+    <section id="tecnologia">
+        <h2>Software Usado para crear CitasPoli</h2>
+        <p>El proyecto de gestion de citas fue desarrollado utilizando Java Eclipse como entorno de desarrollo integrado (IDE). Algunas caracter�sticas incluyen:</p>
+        <ul>
+            <li>Interfaces graficas desarrolladas con Swing.</li>
+            <li>Conexion a base de datos para gestionar la informacion de los usuarios.</li>
+            <li>Implementacion de clases para modelar entidades como alumnos y citas.</li>
+        </ul>
+    </section>
+    
+            <section id="bitacora">
+            <h2>Bitacora de Visitas</h2>
+            <p>Consulta la Bitacora:</p>
+            <a href="https://docs.google.com/document/d/1eH1Q9L1YGz4AqikcglScv5_uXsf3Zs4Oid3ihoew9uE/edit?usp=sharing" target="_blank" class="btn">Acceder a la Bit�cora</a>
+        </section>
+        
+        
+
+<section id="contacto">
+            <h2>Ponte en contacto con nosotros acerca de CitasPoli!</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+</main>
+    <!-- Bot�n para volver al inicio -->
+    <button id="back-to-top">?</button>
+
+<footer>
+    <p>&copy; CitasPoli.</p>
+</footer>
+
+<script>
+
+alert ( 'Bienvenido a la pagina de CitasPoli!' );
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Bot�n "Back to Top"
+    const backToTop = document.getElementById('back-to-top');
+
+    // Mostrar/ocultar bot�n al hacer scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+
+    // Volver al inicio al hacer clic en el bot�n
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Scroll suave para los enlaces del men�
+    const menuLinks = document.querySelectorAll('.menu-link');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetId = link.getAttribute('href').slice(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Formulario interactivo con alerta
+    const form = document.querySelector('form');
+    if (form) {
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('�Gracias! Tu mensaje fue enviado correctamente.');
+            form.reset(); // Limpiar el formulario despu�s de enviar
+        });
+    }
+
+    // Animaciones en las tarjetas de servicios
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'scale(1.05)';
+            card.style.transition = 'transform 0.3s ease';
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'scale(1)';
+        });
+    });
+});
+</script>
+
+</body>
+</html>
